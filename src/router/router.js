@@ -18,5 +18,6 @@ export  default new VueRouter({
             component: HelloWorld,
             name: "HelloWorld"
         }
-    ]
+    ],
+    mode: 'history'
 })
