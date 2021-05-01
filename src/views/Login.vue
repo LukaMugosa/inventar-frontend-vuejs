@@ -78,7 +78,7 @@ export default {
             }
             this.$store
                 .dispatch(LOGIN, credentials)
-                .then(() => this.$router.push({ name: 'HelloWorld' }))
+                .then(() => this.$router.push({ name: 'Dashboard' }))
         }
     },
     computed: {

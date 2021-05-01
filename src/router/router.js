@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Login from "@/views/Login";
-import HelloWorld from "@/components/HelloWorld";
-
+import Dashboard from "@/views/example/Dashboard";
+import Error404 from "@/views/error-pages/Error404";
 
 Vue.use(VueRouter);
 
@@ -10,13 +9,13 @@ export  default new VueRouter({
     routes: [
         {
             path: "/",
-            component: Login,
-            name: "Login"
+            component: Dashboard,
+            name: "Dashboard",
         },
         {
-            path: "/home",
-            component: HelloWorld,
-            name: "HelloWorld"
+            path: "*",
+            component: Error404,
+            name: 'Error404'
         }
     ],
     mode: 'history'
